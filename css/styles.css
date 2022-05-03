@@ -15,7 +15,7 @@ h2 {
   line-height: 1.5;
 }
 .container-fluid {
-  padding: 3% 15%;
+  padding: 3% 15% 7%;
 }
 body {
   font-family: "Montserrat";
@@ -38,16 +38,23 @@ nav-link {
 }
 .download-button {
   margin: 5% 3% 5% 0;
+  
 }
 .title-image {
-  width: 60%;
+  width: 20%;
   transform: rotate(25deg);
+  position: absolute;
+  right:26%;
+  
 }
 
 /* Features section */
 #features {
   text-align: center;
   padding: 7% 15%;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
 }
 .feature-box {
   padding: 5%;
@@ -104,3 +111,45 @@ nav-link {
 .pricing-coloumn{
     padding:3% 2%;
 }
+
+@media (max-width: 1028px) {
+  .title-image{
+    width:70%;
+    position:static;
+    transform:rotate(0);
+  }
+  #title{
+    text-align: center;
+  }
+  
+}
+
+/* CTA section */
+
+#cta{
+  background-color:#ff4c68;
+  text-align: center;
+  padding:7% 15%;
+}
+.cta-text{
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 3.5rem;
+  color: #fff;
+  line-height: 1.5;
+
+}
+.icon{
+  margin-right: 10px;
+}
+
+/* Footer */
+#footer{
+  background-color: #fff;
+  text-align: center;
+  padding:7% 15%;
+}
+.footer-icon{
+  margin:20px 15px;
+}
+
